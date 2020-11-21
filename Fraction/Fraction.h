@@ -15,7 +15,7 @@ public:
 	Fraction setDivision(const Fraction& two); // Need development
 	Fraction setPlus(const Fraction& two);
 	Fraction setMinus(const Fraction& two);
-	Fraction setComparison(const Fraction& two);
+	Fraction setReduce(const Fraction& two);
 	Fraction(int num, int denom);
 	Fraction(int num);
 

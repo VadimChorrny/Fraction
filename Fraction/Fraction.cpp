@@ -71,7 +71,7 @@ Fraction Fraction::setMinus(const Fraction& two)
 	return result;
 }
 
-Fraction Fraction::setComparison(const Fraction& two) // comparsion
+Fraction Fraction::setReduce(const Fraction& two) // comparsion
 {
 	if ((two.num / two.denom) > (this->num / this->denom)) {
 		return two;

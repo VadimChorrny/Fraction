@@ -2,8 +2,8 @@
 #include <string>
 #include "Fraction.h"
 using namespace std;
+
 int main() {
-	setlocale(LC_ALL, " ");
 	Fraction one;
 	int num1, num2, action = 0;
 	cout << "Enter first number:\t";

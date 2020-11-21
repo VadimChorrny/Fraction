@@ -34,6 +34,11 @@ const int Fraction::getDenom() const
 	return denom;
 }
 
+const int Fraction::getNum() const
+{
+	return num;
+}
+
 Fraction Fraction::setMult(const Fraction& two)
 {
 	Fraction result;
@@ -64,6 +69,19 @@ Fraction Fraction::setMinus(const Fraction& two)
 	result.num = (this->num * two.denom) - (two.num * this->denom);
 	result.denom = (this->denom * two.denom);
 	return result;
+}
+
+Fraction Fraction::setComparison(const Fraction& two) // comparsion
+{
+	if ((two.num / two.denom) > (this->num / this->denom)) {
+		return two;
+	}
+	else if ((two.num / two.denom) < (this->num / this->denom)) {
+		return *this;
+	}
+	else {
+		return 0;
+	}
 }
 
 
